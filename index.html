@@ -19,11 +19,16 @@
         <span class="brand-name">Ultramarine<span class="brand-accent">3D</span></span>
       </a>
       <nav class="site-nav" aria-label="Primary">
+        <a href="#specs" data-i18n="nav.specs">Specs</a>
         <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+        <a href="components.html" data-i18n="nav.components">Components</a>
         <a href="#docs" data-i18n="nav.docs">Documentation</a>
         <a href="#about" data-i18n="nav.about">About</a>
       </nav>
       <div class="controls">
+        <a id="github-link" class="pill-btn" href="https://github.com/Ultramarine3D/ultramarine3d.github.io" target="_blank" rel="noopener" aria-label="GitHub repository" title="GitHub repository">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.78 5.45.78 11.72c0 4.94 3.2 9.13 7.64 10.61.56.1.77-.24.77-.54 0-.27-.01-1-.02-1.96-3.11.68-3.77-1.5-3.77-1.5-.51-1.29-1.24-1.63-1.24-1.63-1.02-.7.08-.68.08-.68 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.62 1.22 3.26.93.1-.73.39-1.22.71-1.5-2.49-.28-5.11-1.25-5.11-5.55 0-1.23.44-2.23 1.16-3.02-.12-.28-.5-1.43.11-2.97 0 0 .94-.3 3.09 1.15.9-.25 1.86-.38 2.81-.38.96 0 1.92.13 2.81.38 2.15-1.46 3.09-1.15 3.09-1.15.61 1.54.23 2.69.11 2.97.72.79 1.16 1.79 1.16 3.02 0 4.31-2.63 5.27-5.13 5.54.4.34.76 1.02.76 2.06 0 1.49-.01 2.69-.01 3.06 0 .3.2.65.78.54 4.43-1.48 7.63-5.67 7.63-10.61C23.22 5.45 18.27.5 12 .5z"/></svg>
+        </a>
         <button id="lang-toggle" class="pill-btn" aria-label="Toggle language" title="Toggle language">
           <span id="lang-label">SK</span>
         </button>
@@ -52,6 +57,36 @@
           <div class="blob blob-b"></div>
           <div class="blob blob-c"></div>
         </div>
+      </div>
+    </section>
+
+    <section id="specs" class="section section-alt">
+      <div class="container">
+        <header class="section-head">
+          <h2 data-i18n="specs.title">Printer specs</h2>
+          <p class="muted" data-i18n="specs.sub">Key parameters of the Ultramarine3D build.</p>
+        </header>
+        <div class="specs-grid">
+          <div class="spec"><strong data-i18n="specs.kin.k">Kinematics</strong><span data-i18n="specs.kin.v">CoreXY, dual stepper</span></div>
+          <div class="spec"><strong data-i18n="specs.vol.k">Build volume</strong><span data-i18n="specs.vol.v">350 × 350 × 300 mm</span></div>
+          <div class="spec"><strong data-i18n="specs.frame.k">Frame</strong><span data-i18n="specs.frame.v">Aluminum 30-series I6 (Marek)</span></div>
+          <div class="spec"><strong data-i18n="specs.rails.k">Linear motion</strong><span data-i18n="specs.rails.v">MGN12 rails on X / Y / Z</span></div>
+          <div class="spec"><strong data-i18n="specs.z.k">Z drive</strong><span data-i18n="specs.z.v">3× SFU1204 ballscrews · 3× NEMA 17</span></div>
+          <div class="spec"><strong data-i18n="specs.belts.k">Belts</strong><span data-i18n="specs.belts.v">GT2 9 mm</span></div>
+          <div class="spec"><strong data-i18n="specs.head.k">Toolhead</strong><span data-i18n="specs.head.v">EVA 3 · Klicky Probe</span></div>
+          <div class="spec"><strong data-i18n="specs.hotend.k">Hotend</strong><span data-i18n="specs.hotend.v">Phaetus Rapido 2 HF (52 mm³/s)</span></div>
+          <div class="spec"><strong data-i18n="specs.extruder.k">Extruder</strong><span data-i18n="specs.extruder.v">LDO Orbiter v2.5 (direct drive)</span></div>
+          <div class="spec"><strong data-i18n="specs.bed.k">Heated bed</strong><span data-i18n="specs.bed.v">350 × 350 × 8 mm Al · dual silicone heaters · PEI</span></div>
+          <div class="spec"><strong data-i18n="specs.mcu.k">Mainboard</strong><span data-i18n="specs.mcu.v">BTT Manta M8P V2 + Raspberry Pi CM5</span></div>
+          <div class="spec"><strong data-i18n="specs.toolmcu.k">Toolhead MCU</strong><span data-i18n="specs.toolmcu.v">BTT EBB36 over CAN (BTT U2C)</span></div>
+          <div class="spec"><strong data-i18n="specs.psu.k">Power</strong><span data-i18n="specs.psu.v">MEAN WELL XDR-480E-24 + XDR-240E-24</span></div>
+          <div class="spec"><strong data-i18n="specs.fw.k">Firmware</strong><span data-i18n="specs.fw.v">Klipper · Fluidd · OrcaSlicer</span></div>
+          <div class="spec"><strong data-i18n="specs.speed.k">Print speed</strong><span data-i18n="specs.speed.v">150–300 mm/s, ±0.1 mm</span></div>
+          <div class="spec"><strong data-i18n="specs.encl.k">Enclosure</strong><span data-i18n="specs.encl.v">4 / 6 mm polycarbonate panels</span></div>
+        </div>
+        <p class="specs-foot muted">
+          <a href="components.html" class="link-accent" data-i18n="specs.viewAll">View all components →</a>
+        </p>
       </div>
     </section>
 
@@ -149,6 +184,11 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <span>© <span id="year"></span> Ultramarine3D</span>
+      <span class="footer-links">
+        <a href="https://github.com/Ultramarine3D/ultramarine3d.github.io" target="_blank" rel="noopener" data-i18n="footer.github">GitHub</a>
+        <span aria-hidden="true">·</span>
+        <a href="components.html" data-i18n="nav.components">Components</a>
+      </span>
       <span class="muted" data-i18n="footer.built">Built with plain HTML, CSS, and JS — hosted on GitHub Pages.</span>
     </div>
   </footer>
