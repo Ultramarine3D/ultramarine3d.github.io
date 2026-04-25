@@ -40,7 +40,7 @@
       'comp.elec.title': 'Electronics',
       'comp.power.title': 'Power',
       'comp.encl.title': 'Enclosure',
-      'comp.sw.title': 'Software & firmware'
+      'comp.sw.title': 'Software & firmware',
       'hero.eyebrow': 'Open 3D Printing',
       'hero.title': 'A printer built in the open.',
       'hero.lede': 'Ultramarine3D is a community-driven FFF 3D printer project — transparent hardware, approachable firmware, and honest documentation.',
@@ -72,7 +72,8 @@
       'about.fact3.v': 'Open source',
       'about.fact4.k': 'Status',
       'about.fact4.v': 'In development',
-      'footer.built': 'Built with plain HTML, CSS, and JS — hosted on GitHub Pages.'
+      'footer.built': 'Built with plain HTML, CSS, and JS — hosted on GitHub Pages.',
+      'footer.credit': 'Developed by Michal Mečiar'
     },
     sk: {
       'nav.specs': 'Parametre',
@@ -112,7 +113,7 @@
       'comp.elec.title': 'Elektronika',
       'comp.power.title': 'Napájanie',
       'comp.encl.title': 'Uzavretie',
-      'comp.sw.title': 'Softvér a firmvér'
+      'comp.sw.title': 'Softvér a firmvér',
       'hero.eyebrow': 'Otvorená 3D tlač',
       'hero.title': 'Tlačiareň postavená otvorene.',
       'hero.lede': 'Ultramarine3D je komunitný projekt FFF 3D tlačiarne — transparentný hardvér, prístupný firmvér a poctivá dokumentácia.',
@@ -144,7 +145,8 @@
       'about.fact3.v': 'Open source',
       'about.fact4.k': 'Stav',
       'about.fact4.v': 'Vo vývoji',
-      'footer.built': 'Postavené čistým HTML, CSS a JS — hostené na GitHub Pages.'
+      'footer.built': 'Postavené čistým HTML, CSS a JS — hostené na GitHub Pages.',
+      'footer.credit': 'Vyvinul Michal Mečiar'
     }
   };
 
