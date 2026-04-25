@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ultramarine3D — full component list" />
+  <title>Components — Ultramarine3D</title>
+  <link rel="icon" type="image/jpeg" href="um3d_logo.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Ultramarine3D home">
+        <img src="um3d_logo.jpg" alt="Ultramarine3D logo" class="brand-logo" />
+        <span class="brand-name">Ultramarine<span class="brand-accent">3D</span></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html#specs" data-i18n="nav.specs">Specs</a>
+        <a href="index.html#gallery" data-i18n="nav.gallery">Gallery</a>
+        <a href="components.html" data-i18n="nav.components">Components</a>
+        <a href="index.html#docs" data-i18n="nav.docs">Documentation</a>
+        <a href="index.html#about" data-i18n="nav.about">About</a>
+      </nav>
+      <div class="controls">
+        <a id="github-link" class="pill-btn" href="https://github.com/Ultramarine3D/ultramarine3d.github.io" target="_blank" rel="noopener" aria-label="GitHub repository" title="GitHub repository">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.78 5.45.78 11.72c0 4.94 3.2 9.13 7.64 10.61.56.1.77-.24.77-.54 0-.27-.01-1-.02-1.96-3.11.68-3.77-1.5-3.77-1.5-.51-1.29-1.24-1.63-1.24-1.63-1.02-.7.08-.68.08-.68 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.62 1.22 3.26.93.1-.73.39-1.22.71-1.5-2.49-.28-5.11-1.25-5.11-5.55 0-1.23.44-2.23 1.16-3.02-.12-.28-.5-1.43.11-2.97 0 0 .94-.3 3.09 1.15.9-.25 1.86-.38 2.81-.38.96 0 1.92.13 2.81.38 2.15-1.46 3.09-1.15 3.09-1.15.61 1.54.23 2.69.11 2.97.72.79 1.16 1.79 1.16 3.02 0 4.31-2.63 5.27-5.13 5.54.4.34.76 1.02.76 2.06 0 1.49-.01 2.69-.01 3.06 0 .3.2.65.78.54 4.43-1.48 7.63-5.67 7.63-10.61C23.22 5.45 18.27.5 12 .5z"/></svg>
+        </a>
+        <button id="lang-toggle" class="pill-btn" aria-label="Toggle language" title="Toggle language">
+          <span id="lang-label">SK</span>
+        </button>
+        <button id="theme-toggle" class="pill-btn" aria-label="Toggle theme" title="Toggle theme">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <header class="section-head">
+          <h2 data-i18n="comp.title">Components</h2>
+          <p class="muted" data-i18n="comp.sub">Every part used in the Ultramarine3D printer.</p>
+        </header>
+        <p class="components-intro" data-i18n="comp.intro">
+          A full breakdown of the mechanical, motion, electronic and software components used in the build. Sourced from the project documentation.
+        </p>
+
+        <div class="comp-group">
+          <h3 data-i18n="comp.frame.title">Frame &amp; structure</h3>
+          <ul class="comp-list">
+            <li><span class="name">Marek industrial 30-series profiles</span><span class="desc">Aluminum extrusion, ITEM-style 6 mm slot — main frame</span></li>
+            <li><span class="name">Corner connectors</span><span class="desc">Modular profile joining for rigid, serviceable frame</span></li>
+            <li><span class="name">2020 profile (X axis)</span><span class="desc">Lower mass on the moving X gantry vs 3030 (~250 g saved)</span></li>
+            <li><span class="name">2020 profiles (bed support)</span><span class="desc">450 mm and 325 mm pieces under the heated bed</span></li>
+            <li><span class="name">3D-printed brackets</span><span class="desc">PETG / ABS / ASA / PLA — motor mounts, tensioners, covers, cable guides</span></li>
+          </ul>
+        </div>
+
+        <div class="comp-group">
+          <h3 data-i18n="comp.motion.title">Motion system</h3>
+          <ul class="comp-list">
+            <li><span class="name">CoreXY belt path</span><span class="desc">Two stationary steppers driving X/Y via crossed GT2 belts</span></li>
+            <li><span class="name">GT2 belts, 9 mm</span><span class="desc">Wide belts for high-acceleration printing</span></li>
+            <li><span class="name">MGN12 linear rails</span><span class="desc">Used on X and Y axes for smooth, low-friction motion</span></li>
+            <li><span class="name">Rear-mounted belt tensioners</span><span class="desc">Easy access without removing covers</span></li>
+            <li><span class="name">NEMA 17 steppers (X/Y)</span><span class="desc">Frame-mounted to keep the toolhead light</span></li>
+          </ul>
+        </div>
+
+        <div class="comp-group">
+          <h3 data-i18n="comp.z.title">Z axis</h3>
+          <ul class="comp-list">
+            <li><span class="name">3× Hanpose 17HS6401S NEMA 17</span><span class="desc">Independently driven for auto-tramming</span></li>
+            <li><span class="name">3× SFU1204 ballscrews, 350 mm</span><span class="desc">Lower friction and backlash than threaded rods</span></li>
+            <li><span class="name">Flexible shaft couplers</span><span class="desc">Compensate small misalignment between motor and ballscrew</span></li>
+            <li><span class="name">3× MGN12 linear rails</span><span class="desc">Stabilize the bed carriage</span></li>
+            <li><span class="name">WobbleX system</span><span class="desc">Decouples ballscrew error from the bed to eliminate Z-banding</span></li>
+          </ul>
+        </div>
+
+        <div class="comp-group">
+          <h3 data-i18n="comp.head.title">Toolhead</h3>
+          <ul class="comp-list">
+            <li><span class="name">EVA 3 toolhead</span><span class="desc">Modular open-source platform — easy upgrades</span></li>
+            <li><span class="name">Phaetus Rapido 2 HF hotend</span><span class="desc">High-flow hotend, up to 52 mm³/s</span></li>
+            <li><span class="name">LDO Orbiter v2.5 extruder</span><span class="desc">Compact direct drive, high torque, flexible-friendly</span></li>
+            <li><span class="name">Klicky Probe</span><span class="desc">Magnetically docked microswitch probe for bed mesh / Z-tilt</span></li>
+            <li><span class="name">BTT EBB36</span><span class="desc">Toolhead control board over CAN bus — simplifies wiring</span></li>
+          </ul>
+        </div>
+
+        <div class="comp-group">
+          <h3 data-i18n="comp.bed.title">Heated bed</h3>
+          <ul class="comp-list">
+            <li><span class="name">350 × 350 × 8 mm aluminum plate</span><span class="desc">Flat, thermally massive build surface</span></li>
+            <li><span class="name">Magnetic base + dual-sided PEI sheet</span><span class="desc">Removable spring steel for easy part release</span></li>
+            <li><span class="name">2× silicone heating pads (230 V)</span><span class="desc">Even heat distribution across the plate</span></li>
+            <li><span class="name">Solid State Relay (SSR)</span><span class="desc">Switches mains heaters from the Manta M8P bed output</span></li>
+          </ul>
+        </div>
+
+        <div class="comp-group">
+          <h3 data-i18n="comp.elec.title">Electronics</h3>
+          <ul class="comp-list">
+            <li><span class="name">BTT Manta M8P V2</span><span class="desc">32-bit mainboard with eFuse and direct CM5 socket</span></li>
+            <li><span class="name">Raspberry Pi Compute Module 5</span><span class="desc">8 GB RAM / 64 GB eMMC — runs Klipper host + Fluidd</span></li>
+            <li><span class="name">BTT U2C</span><span class="desc">USB ↔ CAN bridge for the toolhead board</span></li>
+            <li><span class="name">TMC stepper drivers</span><span class="desc">Quiet operation with sensorless homing support</span></li>
+            <li><span class="name">DIN-rail enclosure</span><span class="desc">Mains and low-voltage electronics separated for safety</span></li>
+          </ul>
+        </div>
+
+        <div class="comp-group">
+          <h3 data-i18n="comp.power.title">Power</h3>
+          <ul class="comp-list">
+            <li><span class="name">MEAN WELL XDR-480E-24</span><span class="desc">Powers motors and toolhead — upgradeable to 48 V</span></li>
+            <li><span class="name">MEAN WELL XDR-240E-24</span><span class="desc">Powers fans, display, CM5 and auxiliary electronics</span></li>
+            <li><span class="name">Split-rail design</span><span class="desc">Better modularity, safety, and cheaper repairs</span></li>
+          </ul>
+        </div>
+
+        <div class="comp-group">
+          <h3 data-i18n="comp.encl.title">Enclosure</h3>
+          <ul class="comp-list">
+            <li><span class="name">Polycarbonate panels — 4 mm &amp; 6 mm</span><span class="desc">560×520, 570×520 and 520×520 mm — chamber stability for ABS/ASA</span></li>
+            <li><span class="name">3D-printed panel mounts</span><span class="desc">Account for thermal expansion and easy disassembly</span></li>
+          </ul>
+        </div>
+
+        <div class="comp-group">
+          <h3 data-i18n="comp.sw.title">Software &amp; firmware</h3>
+          <ul class="comp-list">
+            <li><span class="name">Klipper</span><span class="desc">Motion firmware — input shaper, pressure advance, fast movement planning</span></li>
+            <li><span class="name">Fluidd</span><span class="desc">Web UI for controlling and monitoring the printer</span></li>
+            <li><span class="name">KIAUH</span><span class="desc">Used to install the Klipper stack on the CM5</span></li>
+            <li><span class="name">OrcaSlicer</span><span class="desc">Slicer with a custom profile tuned for this machine</span></li>
+            <li><span class="name">Autodesk Fusion 360</span><span class="desc">Parametric CAD used for the entire mechanical design</span></li>
+          </ul>
+        </div>
+
+        <p class="specs-foot"><a href="index.html" class="link-accent" data-i18n="comp.back">← Back to home</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Ultramarine3D</span>
+      <span class="footer-links">
+        <a href="https://github.com/Ultramarine3D/ultramarine3d.github.io" target="_blank" rel="noopener" data-i18n="footer.github">GitHub</a>
+        <span aria-hidden="true">·</span>
+        <a href="index.html" data-i18n="comp.back">← Back to home</a>
+      </span>
+      <span class="muted" data-i18n="footer.built">Built with plain HTML, CSS, and JS — hosted on GitHub Pages.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
